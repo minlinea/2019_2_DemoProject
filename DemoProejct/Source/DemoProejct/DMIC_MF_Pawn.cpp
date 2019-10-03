@@ -25,6 +25,15 @@ void ADMIC_MF_Pawn::Tick(float DeltaTime)
 
 }
 
+void ADMIC_MF_Pawn::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+}
+void ADMIC_MF_Pawn::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+}
+
 // Called to bind functionality to input
 void ADMIC_MF_Pawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {

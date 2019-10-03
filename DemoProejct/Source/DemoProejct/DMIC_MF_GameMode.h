@@ -15,4 +15,8 @@ class DEMOPROEJCT_API ADMIC_MF_GameMode : public AGameModeBase
 	GENERATED_BODY()
 	
 	ADMIC_MF_GameMode();
+
+
+public:
+	virtual void PostLogin(APlayerController* NewPlayer) override;
 };
